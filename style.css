@@ -7,7 +7,7 @@ body {
   max-width: 1440px !important; 
   margin: 0 auto;
   background: #f5f3ed;
-  padding: 0 50px;
+  padding: 0 20px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -78,14 +78,14 @@ body {
   display: flex;
   gap: 20px;
 }
-.total,
-.available,
-.sold,
-.blocked,
-.mortgage,
-.leads {
-  width: 123px;
-  height: 64px;
+.totalDiv,
+.availableDiv,
+.soldDiv,
+.blockedDiv,
+.mortgageDiv,
+.leadsDiv {
+  width: 123px ;
+  height: 64px ; 
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -93,12 +93,12 @@ body {
   align-items: center;
 }
 
-.total,
-.available,
-.sold,
-.blocked,
-.mortgage,
-.leads p {
+.totalDiv,
+.availableDiv,
+.soldDiv,
+.blockedDiv,
+.mortgageDiv,
+.leadsDiv p {
   color: white;
   font-weight: 500;
   font-size: 14px;
@@ -119,23 +119,23 @@ body {
   line-height: 28px;
   margin-left: 3px;
 }
-.total {
+.totalDiv {
   background: #ff6b00;
 }
-.available {
+.availableDiv {
   background: #4cb050;
 }
-.sold {
+.soldDiv {
   background: #e53745;
 }
-.blocked {
+.blockedDiv {
   background: #f5ae5c;
 }
-.mortgage {
+.mortgageDiv {
   background: #bdbdbd;
 }
-.leads {
-  background: #bb86fc;
+.leadsDiv {
+  background: #bb86fc; 
 }
 
 /* apartment section  */
@@ -143,8 +143,9 @@ body {
 .apartments {
   margin-top: 24px;
   display: grid; 
-  /* gap: 20px;    */
-  justify-items: <first | last> baseline;     
+  gap: 30px;  
+  row-gap: 20px;   
+  justify-items: center;     
   grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) ); 
 }
 
@@ -167,13 +168,18 @@ body {
 .bgImgDiv {
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/Rectangle\ 737.png");
+  /* background-image: url("./assets/images/Rectangle\ 737.png"); */
   background-size: cover;
   filter: brightness(90%);
   transition: ease-in-out 0.4s;
 }
 .cardImgDiv:hover .bgImgDiv {
   filter: brightness(60%);
+}
+.cardImg{
+  width: 100%;
+  height: 100%;
+
 }
 .cardImgProperty {
   position: absolute;
@@ -187,7 +193,7 @@ body {
   columns: white;
   height: fit-content;
   width: 100%;
-  padding: 6px 0;
+  padding: 8px 0;
   position: absolute;
   text-align: center;
   background: #0085ff;
@@ -198,6 +204,9 @@ body {
   line-height: 15px;
   color: #ffffff;
   transform: rotate(-43.24deg);
+}
+.incomplete{
+  background: #FF2E00 !important; 
 }
 .soldStatus {
   background: #e53745;
@@ -321,9 +330,10 @@ body {
 }
 .availability {
   margin-top: 18px;
-  padding-bottom: 16px;  
   display: flex;
   justify-content: space-between; 
+  text-align: center;
+  color: white; 
 }
 
 .available,
@@ -336,6 +346,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .available {
   background: #4cb050;
@@ -360,4 +371,19 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  body {
+    padding: 0 20px;
+  }
 }
