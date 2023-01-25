@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px !important; 
+  margin: 0 auto;
+  background: #f5f3ed;
+  padding: 0 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+/* navbar  */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.navLinks {
+  display: flex;
+  align-items: flex-end;
+}
+.wintioLogo {
+  width: 158px;
+  height: 60px;
+  margin-right: 50px;
+}
+.navLinks ul {
+  margin-bottom: 10px;
+}
+.navLinks ul li {
+  display: inline;
+  margin-right: 38px;
+}
+.navbarEnd {
+  display: flex;
+  align-items: center;
+}
+.addLeadsBtn {
+  display: flex;
+  align-items: center;
+  padding: 11px 8px;
+  /* width: 123px;
+  height: 38px; */
+  background: #fdbf11;
+  border-radius: 6px;
+  border: none;
+}
+.addLeadsBtn p {
+  font-weight: 600;
+  font-size: 16px;
+}
+.plusicon {
+  height: 12px;
+  width: auto;
+  margin-right: 5px;
+}
+.avatar {
+  margin-left: 30px;
+}
+.hrDiv {
+  width: 100%;
+  margin-top: 18px;
+  border-bottom: 1px solid #dedede;
+}
+.welcomeText {
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.welcomeText span {
+  font-weight: 400;
+  font-size: 16px;
+}
+.apartmentState {
+  display: flex;
+  gap: 20px;
+}
+.total,
+.available,
+.sold,
+.blocked,
+.mortgage,
+.leads {
+  width: 123px;
+  height: 64px;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.total,
+.available,
+.sold,
+.blocked,
+.mortgage,
+.leads p {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.stateImgDiv {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stateImgDiv img {
+  margin-right: 3px;
+}
+.stateImgDiv p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 3px;
+}
+.total {
+  background: #ff6b00;
+}
+.available {
+  background: #4cb050;
+}
+.sold {
+  background: #e53745;
+}
+.blocked {
+  background: #f5ae5c;
+}
+.mortgage {
+  background: #bdbdbd;
+}
+.leads {
+  background: #bb86fc;
+}
+
+/* apartment section  */
+
+.apartments {
+  margin-top: 24px;
+  display: grid; 
+  /* gap: 20px;    */
+  justify-items: <first | last> baseline;     
+  grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) ); 
+}
+
+.card {
+  width: 320px;
+  /* height: 316px; */ 
+  /* height: fit-content;  */ 
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.cardImgDiv {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 189px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.bgImgDiv {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/Rectangle\ 737.png");
+  background-size: cover;
+  filter: brightness(90%);
+  transition: ease-in-out 0.4s;
+}
+.cardImgDiv:hover .bgImgDiv {
+  filter: brightness(60%);
+}
+.cardImgProperty {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.apartStatus {
+  columns: white;
+  height: fit-content;
+  width: 100%;
+  padding: 6px 0;
+  position: absolute;
+  text-align: center;
+  background: #0085ff;
+  top: 9%;
+  left: -40%;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  transform: rotate(-43.24deg);
+}
+.soldStatus {
+  background: #e53745;
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 18px;
+}
+.soldStatus p {
+  padding: 6px 16px 18px 21px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+.soldValue {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 21px;
+  top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.soldValue p {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #e53745;
+}
+.wings {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 13px;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wings div {
+  text-align: center;
+}
+.wingsText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 5px;
+}
+.wingsValue {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.cardTextDiv {
+  position: absolute;
+  width: 90%;
+  bottom: 13px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.cardHeadingText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.descriptionDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.descText {
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.viewBtn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fdbf11;
+  gap: 9px;
+  cursor: pointer;
+  /* transition: ease-in-out 0.3s; */
+}
+
+/* card details  */
+
+.cardDetails {
+  margin: 18px 13px;
+}
+.flat {
+  display: flex;
+  align-items: center;
+}
+.flat div {
+  width: 14px;
+  height: 0px;
+  border: 1px solid #d1cece;
+  transform: rotate(90deg);
+}
+.availability {
+  margin-top: 18px;
+  padding-bottom: 16px;  
+  display: flex;
+  justify-content: space-between; 
+}
+
+.available,
+.sold,
+.blocked,
+.leads {
+  width: 69px;
+  height: 58px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.available {
+  background: #4cb050;
+}
+.sold {
+  background: #e63745;
+}
+.blocked {
+  background: #f5ae5c;
+}
+.leads {
+  background: #bb86fc;
+}
+
+.availableAmount {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 6px;
+}
+.availableText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
