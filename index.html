@@ -17,12 +17,27 @@
     <header>
       <nav class="navbar">
         <div class="navLinks">
+          <div class="smallMenuStatus" id="smallMenu">
+            <ul class="menuUl">
+              <li>Home</li>
+              <li>All Leads</li>
+              <li>My Team</li>
+              <li>Manage Properties</li>
+              <li>Activity</li>
+            </ul>
+          </div>
+
+          <button class="menuBtn" id="menuButton"
+           
+           >
+            <img src="./assets/icons/images.png" alt="" class="menuIcon" />
+          </button>
           <img
             src="./assets/images/wintiologo1preview 1.png"
             alt=""
             class="wintioLogo"
           />
-          <ul>
+          <ul class="bigMenuUl">
             <li>Home</li>
             <li>All Leads</li>
             <li>My Team</li>
@@ -41,12 +56,19 @@
       <div class="hrDiv"></div>
       <div>
         <h4 class="welcomeText">
-          Welcome Admin, <span>Good morning, Have a nice day!</span>
+          Welcome Admin, <span class="subHeading">Good morning, Have a nice day!</span>
         </h4>
       </div>
     </header>
 
     <main>
+
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+
+
       <!-- apartment state section  -->
 
       <section class="apartmentState">
@@ -112,7 +134,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 737.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 737.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -183,7 +209,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 738.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 738.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus incomplete">Incomplete</p>
@@ -254,7 +284,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 737.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 737.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -325,7 +359,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 738.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 738.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -396,7 +434,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 737.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 737.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -467,7 +509,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 738.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 738.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <!-- <p class="apartStatus">Only me</p> -->
@@ -538,7 +584,11 @@
         <div class="card">
           <div class="cardImgDiv">
             <div class="bgImgDiv">
-              <img src="./assets/images/Rectangle 737.png" alt="" class="cardImg">
+              <img
+                src="./assets/images/Rectangle 737.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -608,8 +658,12 @@
         </div>
         <div class="card">
           <div class="cardImgDiv">
-            <div class="bgImgDiv"> 
-              <img src="./assets/images/Rectangle 738.png" alt="" class="cardImg">
+            <div class="bgImgDiv">
+              <img
+                src="./assets/images/Rectangle 738.png"
+                alt=""
+                class="cardImg"
+              />
             </div>
             <div class="cardImgProperty">
               <p class="apartStatus">Only me</p>
@@ -649,7 +703,7 @@
               <div></div>
               <p>Total morgage : 15</p>
             </div>
-            <div class="availability">
+            <div class="availability ">
               <div class="available">
                 <div>
                   <p class="availableAmount">48</p>
@@ -679,5 +733,52 @@
         </div>
       </section>
     </main>
+
+    <script>
+    
+
+      function mobileMenu(){
+        const btn = document.querySelector('.menuBtn'),
+            view = document.querySelector('#smallMenu'),
+            menuUl=document.querySelector(".menuUl")
+            viewItems = menuUl.querySelectorAll('li'), 
+           
+            body = document.body;
+        
+      
+        btn.addEventListener('click', function(e){ 
+            e.stopPropagation();
+            if( ! (view.classList.contains('smallMenuStatus'))){
+              view.classList.toggle('smallMenuStatus');  
+              } 
+            else{
+              view.classList.remove('smallMenuStatus'); 
+            }
+        }); 
+          
+        for(var i = 0; i < viewItems.length; i++){
+          viewItems[i].addEventListener('click', function(e){
+            e.stopPropagation();
+            console.log("working in li");
+
+          });
+        } 
+         
+            body.addEventListener('click', function(){
+              if( ! (view.classList.contains('smallMenuStatus'))){
+                view.classList.toggle('smallMenuStatus');  
+                } 
+            }); 
+           
+        
+        
+      
+      
+      }
+      
+      mobileMenu();
+
+     
+    </script>
   </body>
 </html>

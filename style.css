@@ -11,32 +11,65 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+/* header{
+  position: relative;
+} */
+
 /* navbar  */
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end; 
   margin-top: 12px;
+}
+
+.menuBtn{
+  border: none;
+  background-color: transparent;
+  padding-bottom: 5px;
+  margin-right: 10px;  
 }
 .navLinks {
   display: flex;
   align-items: flex-end;
+  position: relative;
 }
+#smallMenu{
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  width: 200px;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.smallMenuStatus{
+  display: none;
+}
+#smallMenu ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  font-weight: 500;
+} 
+
 .wintioLogo {
   width: 158px;
   height: 60px;
   margin-right: 50px;
 }
-.navLinks ul {
+.bigMenuUl {
   margin-bottom: 10px;
 }
-.navLinks ul li {
+.bigMenuUl li {
   display: inline;
   margin-right: 38px;
 }
 .navbarEnd {
   display: flex;
   align-items: center;
+
 }
 .addLeadsBtn {
   display: flex;
@@ -51,6 +84,7 @@ body {
 .addLeadsBtn p {
   font-weight: 600;
   font-size: 16px;
+  white-space: nowrap;
 }
 .plusicon {
   height: 12px;
@@ -59,6 +93,9 @@ body {
 }
 .avatar {
   margin-left: 30px;
+}
+.menuIcon{
+  display: none;
 }
 .hrDiv {
   width: 100%;
@@ -74,9 +111,13 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
+.subHeading{
+  display: inline;
+}
 .apartmentState {
   display: flex;
   gap: 20px;
+  margin-top: 50px;
 }
 .totalDiv,
 .availableDiv,
@@ -140,22 +181,26 @@ body {
 
 /* apartment section  */
 
+/* we can arrange in 2 way . one is fixed width of every card. and another is depending screen size. currently it is done according to screen size. */
+
+
 .apartments {
   margin-top: 24px;
   display: grid; 
-  gap: 30px;  
+  grid-template-columns: repeat(4,1fr); 
+  gap: 10px;  
   row-gap: 20px;   
-  justify-items: center;     
-  grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) ); 
+  /* justify-items: center;      */
+  /* grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );  */
 }
 
 .card {
-  width: 320px;
-  /* height: 316px; */ 
-  /* height: fit-content;  */ 
+  width: auto;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  overflow: hidden;
 }
 .cardImgDiv {
   position: relative;
@@ -328,19 +373,28 @@ body {
   border: 1px solid #d1cece;
   transform: rotate(90deg);
 }
-.availability {
-  margin-top: 18px;
-  display: flex;
-  justify-content: space-between; 
+.flat p{
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+.availability {   
+  margin-top: 18px; 
+  display: flex; 
+  grid-template-columns: repeat(4, 1fr);
+  /* display: none !important; */
+  /* gap: 5px;  */
+  /* display: flex;*/
+  justify-content:  space-between;  
   text-align: center;
   color: white; 
+  overflow: hidden;
 }
 
 .available,
 .sold,
 .blocked,
 .leads {
-  width: 69px;
+  width: 23%; 
   height: 58px;
   border-radius: 10px;
   display: flex;
@@ -369,8 +423,7 @@ body {
 }
 .availableText {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 0.7em;
 }
 
 
@@ -386,4 +439,117 @@ body {
   body {
     padding: 0 20px;
   }
+  .apartments{
+    grid-template-columns: repeat(3,1fr);
+  }
 }
+
+
+@media screen and (max-width:1024px) {
+  .wintioLogo{
+    width: 7rem;
+    height: auto; 
+    margin-right: 20px;
+  }
+  .bigMenuUl{
+    margin-bottom: 5px;
+  }
+  .bigMenuUl li {
+  margin-right: 1em;
+  font-size: 0.9em;
+}
+.avatar {
+  margin-left: 15px;
+}
+.addLeadsBtn{
+  padding: 8px 8px;
+}
+.addLeadsBtn p {
+  font-size: 14px;
+}
+.apartments{
+  grid-template-columns: repeat(2,1fr);
+}
+
+.cardImgDiv {
+  height: 32vw;
+}
+
+
+}
+
+
+@media screen and (max-width:768px) {
+  .bigMenuUl {
+    
+    display: none;
+  }
+  .avatar {
+    display: none;
+  }
+  .navbarEnd {
+    display: block;
+  }
+  .menuIcon{
+    display: block;
+    width: 2em;
+    height: auto;
+    cursor: pointer;
+  }
+  .subHeading{
+    display: block;
+    font-size: 0.6em !important;  
+  }
+
+ 
+
+}
+
+
+@media screen and (max-width: 576px) {
+  .wintioLogo{
+    width: 5rem;
+    margin-bottom: 4px;
+  }
+  .menuIcon{
+    width: 1.6rem;
+  }
+  .apartmentState{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .totalDiv,
+.availableDiv,
+.soldDiv,
+.blockedDiv,
+.mortgageDiv,
+.leadsDiv {
+  width: auto;
+  height: 20vw;
+}
+
+.apartments{
+  grid-template-columns: 1fr;
+}
+
+.cardImgDiv {
+  height: 60vw;
+}
+.wings {
+  top: 43%;
+}
+}
+
+@media screen and (max-width:400px) {
+  .cardImgDiv {
+    height: 70vw;
+  }
+  .wings {
+    top: 40%;
+  }
+  .cardHeadingText{
+    font-size: 0.8em;
+  }
+}
+
+
