@@ -15,6 +15,8 @@
   </head>
   <body>
     <header>
+      <!-- navbar  -->
+
       <nav class="navbar">
         <div class="navLinks">
           <div class="smallMenuStatus" id="smallMenu">
@@ -27,9 +29,7 @@
             </ul>
           </div>
 
-          <button class="menuBtn" id="menuButton"
-           
-           >
+          <button class="menuBtn" id="menuButton">
             <img src="./assets/icons/images.png" alt="" class="menuIcon" />
           </button>
           <img
@@ -54,731 +54,752 @@
         </div>
       </nav>
       <div class="hrDiv"></div>
+
+      <!-- heading text  -->
       <div>
         <h4 class="welcomeText">
-          Welcome Admin, <span class="subHeading">Good morning, Have a nice day!</span>
+          Welcome Admin,
+          <span class="subHeading">Good morning, Have a nice day!</span>
         </h4>
       </div>
     </header>
 
     <main>
+      <!-- tabs  -->
 
-      <div>
-        <div></div>
-        <div></div>
-      </div>
-
-
-      <!-- apartment state section  -->
-
-      <section class="apartmentState">
-        <div class="totalDiv">
-          <div>
-            <p>Total Property</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/Vector.png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
-        <div class="availableDiv">
-          <div>
-            <p>Available</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/Vector (1).png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
-        <div class="soldDiv">
-          <div>
-            <p>Sold</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/006-tag.png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
-        <div class="blockedDiv">
-          <div>
-            <p>Blocked</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/rect823.png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
-        <div class="mortgageDiv">
-          <div>
-            <p>Mortgage</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/001-house.png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
-        <div class="leadsDiv">
-          <div>
-            <p>Leads</p>
-            <div class="stateImgDiv">
-              <img src="./assets/icons/Group.png" alt="" />
-              <p>4</p>
-            </div>
-          </div>
-        </div>
+      <section class="tabs">
+        <p id="appartmentTab" class="activeTab">Apartment</p>
+        <p id="plotTab" class="">Plot</p>
       </section>
 
-      <!-- apartments  -->
+      <!-- appartment tab  -->
 
-      <section class="apartments">
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 737.png"
-                alt=""
-                class="cardImg"
-              />
+      <div class="appartmentTabSection">
+        <!-- apartment state section  -->
+
+        <section class="apartmentState">
+          <div class="totalDiv">
+            <div>
+              <p>Total Property</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/Vector.png" alt="" />
+                <p>4</p>
+              </div>
             </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
+          </div>
+          <div class="availableDiv">
+            <div>
+              <p>Available</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/Vector (1).png" alt="" />
+                <p>4</p>
               </div>
-              <div class="soldValue">
-                <p>6</p>
+            </div>
+          </div>
+          <div class="soldDiv">
+            <div>
+              <p>Sold</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/006-tag.png" alt="" />
+                <p>4</p>
               </div>
+            </div>
+          </div>
+          <div class="blockedDiv">
+            <div>
+              <p>Blocked</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/rect823.png" alt="" />
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+          <div class="mortgageDiv">
+            <div>
+              <p>Mortgage</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/001-house.png" alt="" />
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+          <div class="leadsDiv">
+            <div>
+              <p>Leads</p>
+              <div class="stateImgDiv">
+                <img src="./assets/icons/Group.png" alt="" />
+                <p>4</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
+        <!-- apartments  -->
+
+        <section class="apartments">
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 737.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
                 </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
 
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
 
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
-              </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 738.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus incomplete">Incomplete</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">New Appartments</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
               </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 737.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
-              </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 738.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
-              </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 737.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 738.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus incomplete">Incomplete</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
 
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">New Appartments</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
               </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
                 </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
                 </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 738.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <!-- <p class="apartStatus">Only me</p> -->
-              <div class="soldStatus">
-                <p>Sold %</p>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 737.png"
+                  alt=""
+                  class="cardImg"
+                />
               </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
 
-              <!-- <div class="wings">
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
+              </div>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
+                </div>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
+                </div>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 738.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
+
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
+              </div>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
+                </div>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
+                </div>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 737.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
+
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
+              </div>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
+                </div>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
+                </div>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 738.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <!-- <p class="apartStatus">Only me</p> -->
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
+
+                <!-- <div class="wings">
                 <div>
                   <p class="wingsText">Wings</p>
                   <p class="wingsValue">3</p>
                 </div>
               </div> -->
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">New Appartments</h6>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">New Appartments</h6>
 
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
               </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 737.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
-            </div>
-            <div class="availability">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
-              </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
-                </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
-                </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="cardImgDiv">
-            <div class="bgImgDiv">
-              <img
-                src="./assets/images/Rectangle 738.png"
-                alt=""
-                class="cardImg"
-              />
-            </div>
-            <div class="cardImgProperty">
-              <p class="apartStatus">Only me</p>
-              <div class="soldStatus">
-                <p>Sold %</p>
-              </div>
-              <div class="soldValue">
-                <p>6</p>
-              </div>
-
-              <div class="wings">
-                <div>
-                  <p class="wingsText">Wings</p>
-                  <p class="wingsValue">3</p>
-                </div>
-              </div>
-              <div class="cardTextDiv">
-                <h6 class="cardHeadingText">The builder’s Group</h6>
-
-                <div class="descriptionDiv">
-                  <div class="desc">
-                    <img src="./assets/icons/location.png" alt="" />
-                    <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
                   </div>
-                  <button class="viewBtn">
-                    <p>View</p>
-                    <img src="./assets/icons/Vector 16.png" alt="" />
-                  </button>
+                </div>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 737.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
 
-          <div class="cardDetails">
-            <div class="flat">
-              <p>Total Flat : 90</p>
-              <div></div>
-              <p>Total morgage : 15</p>
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="availability ">
-              <div class="available">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Available</p>
-                </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
               </div>
-              <div class="sold">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Sold</p>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
                 </div>
-              </div>
-              <div class="blocked">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Blocked</p>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
                 </div>
-              </div>
-              <div class="leads">
-                <div>
-                  <p class="availableAmount">48</p>
-                  <p class="availableText">Leads</p>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="card">
+            <div class="cardImgDiv">
+              <div class="bgImgDiv">
+                <img
+                  src="./assets/images/Rectangle 738.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+              <div class="cardImgProperty">
+                <p class="apartStatus">Only me</p>
+                <div class="soldStatus">
+                  <p>Sold %</p>
+                </div>
+                <div class="soldValue">
+                  <p>6</p>
+                </div>
+
+                <div class="wings">
+                  <div>
+                    <p class="wingsText">Wings</p>
+                    <p class="wingsValue">3</p>
+                  </div>
+                </div>
+                <div class="cardTextDiv">
+                  <h6 class="cardHeadingText">The builder’s Group</h6>
+
+                  <div class="descriptionDiv">
+                    <div class="desc">
+                      <img src="./assets/icons/location.png" alt="" />
+                      <p class="descText">Ameerpet nagar-b, Hyderabad</p>
+                    </div>
+                    <button class="viewBtn">
+                      <p>View</p>
+                      <img src="./assets/icons/Vector 16.png" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cardDetails">
+              <div class="flat">
+                <p>Total Flat : 90</p>
+                <div></div>
+                <p>Total morgage : 15</p>
+              </div>
+              <div class="availability">
+                <div class="available">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Available</p>
+                  </div>
+                </div>
+                <div class="sold">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Sold</p>
+                  </div>
+                </div>
+                <div class="blocked">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Blocked</p>
+                  </div>
+                </div>
+                <div class="leads">
+                  <div>
+                    <p class="availableAmount">48</p>
+                    <p class="availableText">Leads</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- plot tab  -->
+
+      <div class="plotTabSection">Nothing here</div>
     </main>
 
     <script>
-    
+      function mobileMenu() {
+        const btn = document.querySelector(".menuBtn"),
+          view = document.querySelector("#smallMenu"),
+          menuUl = document.querySelector(".menuUl");
+        (viewItems = menuUl.querySelectorAll("li")), (body = document.body);
 
-      function mobileMenu(){
-        const btn = document.querySelector('.menuBtn'),
-            view = document.querySelector('#smallMenu'),
-            menuUl=document.querySelector(".menuUl")
-            viewItems = menuUl.querySelectorAll('li'), 
-           
-            body = document.body;
-        
-      
-        btn.addEventListener('click', function(e){ 
-            e.stopPropagation();
-            if( ! (view.classList.contains('smallMenuStatus'))){
-              view.classList.toggle('smallMenuStatus');  
-              } 
-            else{
-              view.classList.remove('smallMenuStatus'); 
-            }
-        }); 
-          
-        for(var i = 0; i < viewItems.length; i++){
-          viewItems[i].addEventListener('click', function(e){
-            e.stopPropagation();
-            console.log("working in li");
+        btn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          if (!view.classList.contains("smallMenuStatus")) {
+            view.classList.toggle("smallMenuStatus");
+          } else {
+            view.classList.remove("smallMenuStatus");
+          }
+        });
 
+        for (var i = 0; i < viewItems.length; i++) {
+          viewItems[i].addEventListener("click", function (e) {
+            e.stopPropagation();
           });
-        } 
-         
-            body.addEventListener('click', function(){
-              if( ! (view.classList.contains('smallMenuStatus'))){
-                view.classList.toggle('smallMenuStatus');  
-                } 
-            }); 
-           
-        
-        
-      
-      
+        }
+
+        body.addEventListener("click", function () {
+          if (!view.classList.contains("smallMenuStatus")) {
+            view.classList.toggle("smallMenuStatus");
+          }
+        });
       }
-      
+
       mobileMenu();
 
-     
+      // tabs
+      function tabs() {
+        const appartmentTab = document.querySelector("#appartmentTab"),
+          plotTab = document.querySelector("#plotTab"),
+          appartmentTabSection = document.querySelector(
+            ".appartmentTabSection"
+          ),
+          plotTabSection = document.querySelector(".plotTabSection");
+
+        appartmentTab.addEventListener("click", function () {
+          appartmentTab.classList.toggle("activeTab");
+          plotTab.classList.remove("activeTab");
+          appartmentTabSection.style.display = "block";
+          plotTabSection.style.display = "none";
+        });
+
+        plotTab.addEventListener("click", function () {
+          appartmentTab.classList.remove("activeTab");
+          plotTab.classList.toggle("activeTab");
+          appartmentTabSection.style.display = "none";
+          plotTabSection.style.display = "block";
+        });
+      }
+      tabs();
     </script>
   </body>
 </html>

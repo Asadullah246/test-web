@@ -4,38 +4,56 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1440px !important; 
+  max-width: 1440px !important;
   margin: 0 auto;
   background: #f5f3ed;
   padding: 0 20px;
   font-family: "Rubik", sans-serif;
 }
 
-/* header{
-  position: relative;
-} */
+main{
+  margin-bottom: 30px; 
+}
+
+/* scrollbar  */
+
+body::-webkit-scrollbar {
+  width: 5px;
+  
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #BB86FC;
+  outline: 1px solid blue;
+  border-radius: 50px;
+}
+
 
 /* navbar  */
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; 
+  align-items: flex-end;
   margin-top: 12px;
 }
 
-.menuBtn{
+.menuBtn {
   border: none;
   background-color: transparent;
   padding-bottom: 5px;
-  margin-right: 10px;  
+  margin-right: 10px;
 }
 .navLinks {
   display: flex;
   align-items: flex-end;
   position: relative;
 }
-#smallMenu{
+#smallMenu {
   position: absolute;
   top: 110%;
   left: 0;
@@ -44,7 +62,7 @@ body {
   border-radius: 15px;
   padding: 10px 15px;
 }
-.smallMenuStatus{
+.smallMenuStatus {
   display: none;
 }
 #smallMenu ul li {
@@ -52,7 +70,14 @@ body {
   margin-bottom: 10px;
   font-size: 0.9em;
   font-weight: 500;
-} 
+}
+li {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+li:hover {
+  color: #fdbf11;
+}
 
 .wintioLogo {
   width: 158px;
@@ -69,7 +94,6 @@ body {
 .navbarEnd {
   display: flex;
   align-items: center;
-
 }
 .addLeadsBtn {
   display: flex;
@@ -80,7 +104,14 @@ body {
   background: #fdbf11;
   border-radius: 6px;
   border: none;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
+
+.addLeadsBtn:hover {
+  opacity: 0.5;
+}
+
 .addLeadsBtn p {
   font-weight: 600;
   font-size: 16px;
@@ -94,14 +125,18 @@ body {
 .avatar {
   margin-left: 30px;
 }
-.menuIcon{
+.menuIcon {
   display: none;
 }
+
+/* heading  */
+
 .hrDiv {
   width: 100%;
   margin-top: 18px;
   border-bottom: 1px solid #dedede;
 }
+
 .welcomeText {
   font-weight: 600;
   font-size: 24px;
@@ -111,13 +146,47 @@ body {
   font-weight: 400;
   font-size: 16px;
 }
-.subHeading{
+.subHeading {
   display: inline;
 }
+
+/* main div  */
+
+/* tabs  */
+
+.tabs {
+  display: flex;
+  gap: 14px;
+  margin-top: 58px;
+}
+
+.tabs p {
+  padding: 0px 20px 14px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease-in-out 0.3s;
+}
+.tabs p:hover {
+  color: #fdbf11;
+}
+.activeTab {
+  border-bottom: 4px solid #fdbf11;
+  font-weight: 500;
+}
+.plotTabSection {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  display: none;
+}
+
+/* appartment state */
+
 .apartmentState {
   display: flex;
   gap: 20px;
-  margin-top: 50px;
+  margin-top: 66px;
 }
 .totalDiv,
 .availableDiv,
@@ -125,8 +194,8 @@ body {
 .blockedDiv,
 .mortgageDiv,
 .leadsDiv {
-  width: 123px ;
-  height: 64px ; 
+  width: 123px;
+  height: 64px;
   border-radius: 6px;
   text-align: center;
   display: flex;
@@ -176,23 +245,25 @@ body {
   background: #bdbdbd;
 }
 .leadsDiv {
-  background: #bb86fc; 
+  background: #bb86fc;
 }
 
 /* apartment section  */
 
 /* we can arrange in 2 way . one is fixed width of every card. and another is depending screen size. currently it is done according to screen size. */
 
-
 .apartments {
   margin-top: 24px;
-  display: grid; 
-  grid-template-columns: repeat(4,1fr); 
-  gap: 10px;  
-  row-gap: 20px;   
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  row-gap: 20px;
   /* justify-items: center;      */
   /* grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );  */
 }
+
+
+/* card  */
 
 .card {
   width: auto;
@@ -213,7 +284,6 @@ body {
 .bgImgDiv {
   width: 100%;
   height: 100%;
-  /* background-image: url("./assets/images/Rectangle\ 737.png"); */
   background-size: cover;
   filter: brightness(90%);
   transition: ease-in-out 0.4s;
@@ -221,10 +291,9 @@ body {
 .cardImgDiv:hover .bgImgDiv {
   filter: brightness(60%);
 }
-.cardImg{
+.cardImg {
   width: 100%;
   height: 100%;
-
 }
 .cardImgProperty {
   position: absolute;
@@ -250,8 +319,8 @@ body {
   color: #ffffff;
   transform: rotate(-43.24deg);
 }
-.incomplete{
-  background: #FF2E00 !important; 
+.incomplete {
+  background: #ff2e00 !important;
 }
 .soldStatus {
   background: #e53745;
@@ -286,7 +355,6 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-
   color: #e53745;
 }
 .wings {
@@ -355,7 +423,6 @@ body {
   color: #fdbf11;
   gap: 9px;
   cursor: pointer;
-  /* transition: ease-in-out 0.3s; */
 }
 
 /* card details  */
@@ -373,20 +440,16 @@ body {
   border: 1px solid #d1cece;
   transform: rotate(90deg);
 }
-.flat p{
+.flat p {
   white-space: nowrap;
   font-size: 0.9em;
 }
-.availability {   
-  margin-top: 18px; 
-  display: flex; 
-  grid-template-columns: repeat(4, 1fr);
-  /* display: none !important; */
-  /* gap: 5px;  */
-  /* display: flex;*/
-  justify-content:  space-between;  
+.availability {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  color: white; 
+  color: white;
   overflow: hidden;
 }
 
@@ -394,13 +457,12 @@ body {
 .sold,
 .blocked,
 .leads {
-  width: 23%; 
+  width: 23%;
   height: 58px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .available {
   background: #4cb050;
@@ -426,130 +488,117 @@ body {
   font-size: 0.7em;
 }
 
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   body {
     padding: 0 20px;
   }
-  .apartments{
-    grid-template-columns: repeat(3,1fr);
+  .apartments {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-
-@media screen and (max-width:1024px) {
-  .wintioLogo{
+@media screen and (max-width: 1024px) {
+  .wintioLogo {
     width: 7rem;
-    height: auto; 
+    height: auto;
     margin-right: 20px;
   }
-  .bigMenuUl{
+  .bigMenuUl {
     margin-bottom: 5px;
   }
   .bigMenuUl li {
-  margin-right: 1em;
-  font-size: 0.9em;
-}
-.avatar {
-  margin-left: 15px;
-}
-.addLeadsBtn{
-  padding: 8px 8px;
-}
-.addLeadsBtn p {
-  font-size: 14px;
-}
-.apartments{
-  grid-template-columns: repeat(2,1fr);
+    margin-right: 1em;
+    font-size: 0.9em;
+  }
+  .avatar {
+    margin-left: 15px;
+  }
+  .addLeadsBtn {
+    padding: 8px 8px;
+  }
+
+  .addLeadsBtn p {
+    font-size: 14px;
+  }
+  .apartments {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardImgDiv {
+    height: 32vw;
+  }
 }
 
-.cardImgDiv {
-  height: 32vw;
-}
-
-
-}
-
-
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .bigMenuUl {
-    
     display: none;
   }
+
   .avatar {
     display: none;
   }
   .navbarEnd {
     display: block;
   }
-  .menuIcon{
+  .menuIcon {
     display: block;
     width: 2em;
     height: auto;
     cursor: pointer;
   }
-  .subHeading{
+  .subHeading {
     display: block;
-    font-size: 0.6em !important;  
+    font-size: 0.6em !important;
   }
 
- 
-
+  .apartmentState {
+    margin-top: 40px;
+  }
 }
 
-
 @media screen and (max-width: 576px) {
-  .wintioLogo{
+  .wintioLogo {
     width: 5rem;
     margin-bottom: 4px;
   }
-  .menuIcon{
+  .menuIcon {
     width: 1.6rem;
   }
-  .apartmentState{
+
+  .apartmentState {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
   .totalDiv,
-.availableDiv,
-.soldDiv,
-.blockedDiv,
-.mortgageDiv,
-.leadsDiv {
-  width: auto;
-  height: 20vw;
+  .availableDiv,
+  .soldDiv,
+  .blockedDiv,
+  .mortgageDiv,
+  .leadsDiv {
+    width: auto;
+    height: 20vw;
+  }
+
+  .apartments {
+    grid-template-columns: 1fr;
+  }
+
+  .cardImgDiv {
+    height: 60vw;
+  }
+  .wings {
+    top: 43%;
+  }
 }
 
-.apartments{
-  grid-template-columns: 1fr;
-}
-
-.cardImgDiv {
-  height: 60vw;
-}
-.wings {
-  top: 43%;
-}
-}
-
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .cardImgDiv {
     height: 70vw;
   }
   .wings {
     top: 40%;
   }
-  .cardHeadingText{
+  .cardHeadingText {
     font-size: 0.8em;
   }
 }
-
-
